@@ -26,7 +26,7 @@ function App() {
   
   //border-[#202124]
   return (
-    <div className="bg-[#575757] w-[30%] rounded-2xl border-b-8  border-[#202124] h-[31rem]" data-testid="app-component">
+    <div className="bg-[#575757] mt-[3rem] w-[30%] rounded-2xl border-b-8  border-[#202124] h-[31rem]" data-testid="app-component">
          
         <div className="flex justify-center mt-[1rem]" data-testid="display-component">
       <Display value={state.siguiente || state.total || "0"} />
