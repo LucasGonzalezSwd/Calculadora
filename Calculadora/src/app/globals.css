@@ -25,3 +25,13 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@font-face {
+  font-family: digital-7 ;
+  src: url(../fonts/digital-7.ttf) format('truetype');
+}
+
+.letraD{
+  font-family: 'digital-7', sans-serif;
+  font-size: 3.65rem;
+}
