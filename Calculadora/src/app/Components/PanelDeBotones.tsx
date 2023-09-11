@@ -1,6 +1,7 @@
 "use client"
 import Button from "./Button"
-import { PanelDeBotonesProps } from "../types"
+import { PanelDeBotonesProps } from "../../types"
+import '../../app/globals.css'
 
 export default function panelDeBotones ({clickHandle}:PanelDeBotonesProps ) {
   

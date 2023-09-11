@@ -1,6 +1,6 @@
 "use client"
-import '../app/globals.css'
-import { DisplayProps } from '../types'
+import '../../app/globals.css'
+import { DisplayProps } from '../../types'
 
 
 export default function Display ({value} : DisplayProps) {

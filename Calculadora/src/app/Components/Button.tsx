@@ -1,6 +1,6 @@
 "use client"
-import '../app/globals.css'
-import {ButtonProps} from '../types'
+import '../../app/globals.css'
+import {ButtonProps} from '../../types'
 
 export default function Boton ({clickHandle, name} : ButtonProps) {
 

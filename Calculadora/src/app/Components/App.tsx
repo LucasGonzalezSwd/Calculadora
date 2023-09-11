@@ -3,9 +3,9 @@
 import React, { useState, useEffect } from "react";
 import Display from "./Display";
 import PanelDeBotones from "./PanelDeBotones";
-import { operaciones } from "../logic/operaciones";
-import '../app/globals.css'
-import {State} from '../types'
+import { operaciones } from "../../logic/operaciones";
+import '../../app/globals.css'
+import {State} from '../../types'
 
 
 function App() {
