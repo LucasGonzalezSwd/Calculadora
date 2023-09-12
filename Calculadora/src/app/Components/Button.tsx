@@ -20,7 +20,7 @@ export default function Boton ({clickHandle, name} : ButtonProps) {
   }
 
       return (
-        <div className=' w-full mt-[1.6rem] flex justify-center'>
+        <div className=' w-full mt-[1.6rem] flex justify-center' data-testid="button-component">
           <button className={buttonStyle} onClick={handleClick}>{name}</button>
         </div>
       );

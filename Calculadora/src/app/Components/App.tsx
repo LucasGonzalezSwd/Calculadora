@@ -17,9 +17,7 @@ function App() {
 
   const handleClick = (nombreDeBoton : string) => {
     setState((prevState) => {
-
       const newState = operaciones(prevState, nombreDeBoton);
-      
       return { ...prevState, ...newState };
     });
   };
