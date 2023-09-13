@@ -2,6 +2,7 @@ import Big from "big.js";
 import { operate } from "./operate";
 import { isNumber } from "./isNumber";
 import { State } from "@/types";
+
 export const operaciones = (estado: State, nombreDeBoton: string) => {
   if (nombreDeBoton === "AC") {
     return {
@@ -105,4 +106,35 @@ export const operaciones = (estado: State, nombreDeBoton: string) => {
     siguiente: null,
     operador: nombreDeBoton,
   };
+};
+
+export const handleKeyPress = (event: KeyboardEvent, handleClick: (nombreDeBoton: string) => void) => {
+  const keyMappings: { [key: string]: string } = {
+    "0": "0",
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6",
+    "7": "7",
+    "8": "8",
+    "9": "9",
+    "=": "=",
+    "+": "+",
+    ".": ".",
+    "-": "-",
+    "*": "x",
+    "x": "*", 
+    "/": "/",
+    "Enter": "=",
+    "Escape": "AC",
+    "Backspace": "AC",
+  };
+
+  const keyName = event.key;
+
+  if (keyMappings[keyName]) {
+    handleClick(keyMappings[keyName]);
+  }
 };
