@@ -3,14 +3,14 @@ import Button from "./Button"
 import { PanelDeBotonesProps } from "../../types"
 import '../../app/globals.css'
 
-export default function panelDeBotones ({clickHandle}:PanelDeBotonesProps ) {
+export default function PanelDeBotones ({clickHandle}:PanelDeBotonesProps ) {
   
     const handleClick = (nombreDeBoton: string) => {
       clickHandle(nombreDeBoton)
     }
     
     return (
-        <div className="flex mt-[0.5rem] flex-col w-full  ">
+        <div className="flex mt-[0.5rem] flex-col w-full  " data-testid="panel-component" >
           <div className="w-full flex ">
             <Button  name="AC" clickHandle={handleClick}/>
             <Button name="+/-" clickHandle={handleClick}/>
